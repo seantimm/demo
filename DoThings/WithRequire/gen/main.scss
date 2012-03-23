@@ -1,0 +1,42 @@
+@import "compass";
+@import "compass/reset";
+
+body {
+    font-size: 2em;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+#container {
+    $box-padding: 10px;
+    $box-width: 500px;
+
+    width: $box-width - $box-padding * 2;
+    padding: 0 $box-padding;
+    position: relative;
+    margin: 0 auto;
+}
+
+#addTask {
+    font-size: 1em;
+}
+
+#taskList {
+    list-style-type: none;
+
+    li {
+        $item-backcolor: #F9F9F9;
+
+        background-color: $item-backcolor;
+        cursor: n-resize;
+        padding: 6px 9px;
+        margin: 6px;
+
+        border: 1px solid #EEEEEE;
+        @include border-radius(5px);
+
+        &:hover {
+            background-color: darken($item-backcolor, 5%);
+            @include single-box-shadow;
+        }
+    }
+}
