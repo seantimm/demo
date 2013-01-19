@@ -2,3 +2,9 @@ ModernWeb/.idea/
 DoThings/WithRequire-build/
 .sass-cache/
 xcuserdata/
+*.user
+*.suo
+bin/
+obj/
+packages/
+!packages/repositories.config
