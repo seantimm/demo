@@ -1,7 +1,29 @@
 ﻿@model dynamic
 
-@{
-    ViewBag.Title = "Home";
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SignalR Demo</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="slide">
+        <h2>Slide 1</h2>    
+    </div>
 
-<h2>Home</h2>
+    <div class="slide">
+        <h2>Slide 2</h2>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/deck")
+    @Scripts.Render("~/bundles/signalr")
+    <script src="signalr/hubs" type="text/javascript"></script>
+
+    @Scripts.Render("~/bundles/demo")
+</body>
+</html>

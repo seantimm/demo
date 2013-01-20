@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
-namespace SignalR
+namespace SignalRDemo
 {
     public class BundleConfig
     {
@@ -16,6 +15,12 @@ namespace SignalR
 
             bundles.Add(new ScriptBundle("~/bundles/deck").Include(
                 "~/Scripts/deck.core.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/signalr").Include(
+                "~/Scripts/jquery.signalR-1.0.0-rc2.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/demo").Include(
+                "~/Scripts/demo.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
