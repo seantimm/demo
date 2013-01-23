@@ -161,6 +161,7 @@
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\images\keepin_it_real.png" />
+    <Content Include="Content\images\scaleout.png" />
     <Content Include="Content\prism.css" />
     <Content Include="Content\web-2.0.css" />
     <Content Include="Global.asax" />

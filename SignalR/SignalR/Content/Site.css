@@ -22,3 +22,7 @@ article .toobig {
 .slide li {
     font-size: 2em;
 }
+
+.slide .bitsmaller li {
+    font-size: 1.5em;
+}

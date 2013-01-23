@@ -58,14 +58,96 @@
             <section class="slide">
                 <h2>Show me some more code!</h2>
                 Server:
-                <pre><code class="language-java">public class Inventory : Hub {
-        public void UpdateInventory(dynamic details) {
-            Clients.Others.inventoryTaken(details);
-        }
+                <pre><code class="language-java">public class Inventory : Hub 
+{
+    public void UpdateInventory(dynamic details) 
+    {
+        Clients.Others.inventoryTaken(details);
     }
+}</code></pre>
+            </section>
+            
+            <section class="slide">
+                <h2>Messaging Options</h2>
+                <ul class="bitsmaller">
+                    <li><code class="language-java">Clients.All</code> - All connected clients</li>
+                    <li><code class="language-java">Clients.Others</code> - Everyone but the caller</li>
+                    <li><code class="language-java">Clients.Group("groupName", exclude)</code> - All clients in that group (excluding the exclude list of ids)</li>
+                    <li><code class="language-java">Clients.Client("connectionid")</code> - A specific client</li>
+                    <li><code class="language-java">Clients.OthersInGroup("groupName")</code> - All clients in that group except the caller</li>
+                    <li><code class="language-java">Clients.AllExcept(exclude)</code> - All clients except the ones specified in the exclude list.</li>
+                    <li><code class="language-java">Clients.Caller</code> - Call back to the caller</li>
+                </ul>
+            </section>
+            
+            <section class="slide">
+                <h2>Meet and Greet</h2>
+                <pre data-line="6"><code class="language-java">public class Inventory : Hub
+{
+        public override Task OnConnected()
+        {
+            DoSomething(this.Context.ConnectionId);
+            return base.OnConnected();
+        }
+
+        public override Task OnDisconnected()
+        {
+            return base.OnDisconnected();
+        }
+
+        public override Task OnReconnected()
+        {
+            return base.OnReconnected();
+        }
+        
+        ...
 }
 </code></pre>
             </section>
+            <section class="slide">
+                <h2>Hub Pipeline</h2>
+                <pre><code class="language-java">protected void Application_Start(object sender, EventArgs e) {
+    GlobalHost.HubPipeline.AddModule(new LoggingPipelineModule());
+}</code></pre>
+                <pre class="slide"><code class="language-java">public class LoggingPipelineModule : HubPipelineModule
+{
+    protected override bool OnBeforeIncoming(IHubIncomingInvokerContext context)
+    {
+        Debug.WriteLine("=> Invoking " + context.MethodDescriptor.Name + " on hub " + context.MethodDescriptor.Hub.Name);
+        return base.OnBeforeIncoming(context);
+    }
+ 
+    protected override bool OnBeforeOutgoing(IHubOutgoingInvokerContext context)
+    {
+        Debug.WriteLine("<= Invoking " + context.Invocation.Method + " on client hub " + context.Invocation.Hub);
+        return base.OnBeforeOutgoing(context);
+    }
+}</code></pre>
+            </section>
+            <section class="slide">
+                <h2>Slow Going</h2>
+                You can be notified of and react to slow / inconsistent network issues:
+                <pre data-line="9"><code class="language-javascript">$(function () {
+        var chat = $.connection.chat;
+ 
+        chat.client.send = function (message) {
+            $('#messages').append(message);
+        };
+        
+        $.connection.hub.connectionSlow(function() {
+            alert('There seems to be some connectivity issues...');
+        });
+        
+        $.connection.hub.start();
+    });</code></pre>
+            </section>
+            <section class="slide">
+                <h2>Scale Out</h2>
+                Currently provides two backplane implementations: Azure Service Bus and Redis
+                <img src="/Content/images/scaleout.png"/>
+            </section>
+            
+            <section class="slide"><h1>Thanks!</h1></section>
         </article>
         
         <a id="drawtime" href="#drawbox" role="button" class="btn" data-toggle="modal">Draw Time</a>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.SignalR;
+using System.Threading.Tasks;
 
 namespace SignalRDemo.Hubs
 {
