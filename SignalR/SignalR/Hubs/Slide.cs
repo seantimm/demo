@@ -18,5 +18,10 @@ namespace SignalRDemo.Hubs
         {
             Clients.All.clearCanvas();
         }
+
+        public void ShowDraw(string action)
+        {
+            Clients.Others.showDraw(action);
+        }
     }
 }

@@ -17,19 +17,31 @@
             </section>
 
             <section class="slide">
-                <h2>Slide 2</h2>
+                <h2>What is it?</h2>
+                <h3 class="toobig">It's basically magic.</h3>
+            </section>
+            
+            <section class="slide">
+                <h2>How does it work?</h2>
+                <h3>It uses a gracefully degradating transport mode (in order of decreasing performance):</h3>
+                    <ul>
+                        <li>WebSockets</li>
+                        <li>Server Sent Events</li>
+                        <li>Forever Frame</li>
+                        <li>Long Polling</li>
+                    </ul>
             </section>
         </article>
         
-        <a href="#drawbox" role="button" style="position: absolute; bottom: 0; z-index: 5000" class="btn" data-toggle="modal">Draw Time</a>
+        <a id="drawtime" href="#drawbox" role="button" class="btn" data-toggle="modal">Draw Time</a>
         
-        <div id="drawbox" class="modal hide fade" style="left: 40px; right: 40px; top: 50px; bottom: 50px; width: auto; margin: 0" tabindex="-1" role="dialog">
+        <div id="drawbox" class="modal hide fade" role="dialog">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">x</button>
                 <h3>It's like this...</h3>
             </div>
-            <div class="modal-body" style="max-height: none;">
-                <canvas id="canvas" width="660" height="690" style="outline:1px red solid"></canvas>
+            <div class="modal-body">
+                <canvas id="canvas" width="680" height="720"></canvas>
             </div>
             <div class="modal-footer">
                 <button class="btn" data-dismiss="modal">Close</button>

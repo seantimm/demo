@@ -1,8 +1,8 @@
 ﻿(function ($) {
-    $("body").on('touchmove', function(e) {
-        e.preventDefault(); // Keep the iPad from elastic scrolling
+    $('body').on('touchmove', function (e) {
+        e.preventDefault(); // avoid iPad bouncing during slideshow
     });
-    
+
     $.connection.hub.start()
         .done(function () { })
         .fail(function () { alert("Could not connect!"); });
@@ -24,6 +24,20 @@
             hub.server.goToSlide(to);
         }
     });
+
+    var isShowDraw = false;
+    $('#drawbox').on('show hide', function (event) {
+        if (isShowDraw) {
+            isShowDraw = false;
+        } else {
+            hub.server.showDraw(event.type);
+        }
+    });
+
+    hub.client.showDraw = function (action) {
+        isShowDraw = true;
+        $('#drawbox').modal(action);
+    };
 
     var clickX = new Array();
     var clickY = new Array();
@@ -72,6 +86,7 @@
     }
     
     canvas.on('mousemove touchmove', function (e) {
+        e.preventDefault(); // Keep the iPad from elastic scrolling
         if (isPainting) {
             var coordinates = getCoordinates(e);
             addClick(coordinates.x, coordinates.y, true);
@@ -83,7 +98,7 @@
         isPainting = false;
     });
     
-    canvas.on('mouseleave', function (e) {
+    canvas.on('mouseleave touchcancel', function (e) {
         isPainting = false;
     });
     
