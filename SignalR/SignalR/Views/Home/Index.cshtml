@@ -24,12 +24,47 @@
             <section class="slide">
                 <h2>How does it work?</h2>
                 <h3>It uses a gracefully degradating transport mode (in order of decreasing performance):</h3>
-                    <ul>
-                        <li>WebSockets</li>
-                        <li>Server Sent Events</li>
-                        <li>Forever Frame</li>
-                        <li>Long Polling</li>
-                    </ul>
+                <ul>
+                    <li>WebSockets</li>
+                    <li>Server Sent Events</li>
+                    <li>Forever Frame</li>
+                    <li>Long Polling</li>
+                </ul>
+            </section>
+            
+            <section class="slide">
+                <h2>Show me some code!</h2>
+                <div class="slide">
+                    Client:
+                    <pre data-line="3, 5, 11"><code class="language-javascript">(function($) {
+    var inventoryHub = $.connection.inventory;
+
+    $.connection.hub.start()
+        .done(function() {
+            randomlyUpdateInventory({ id: 1, count: 5 });
+        });
+
+    function randomlyUpdateInventory(details) {
+        inventoryHub.server.updateInventory(details);
+    }
+})(jQuery);</code></pre></div>
+                <div class="slide">Client callback:
+                    <pre data-line=""><code class="language-javascript">inventoryHub.client.inventoryTaken = function(details) {
+    alert('Someone just took ' + details.count + ' of item ' + details.id);
+};</code></pre>
+                </div>
+            </section>
+            
+            <section class="slide">
+                <h2>Show me some more code!</h2>
+                Server:
+                <pre><code class="language-java">public class Inventory : Hub {
+        public void UpdateInventory(dynamic details) {
+            Clients.Others.inventoryTaken(details);
+        }
+    }
+}
+</code></pre>
             </section>
         </article>
         

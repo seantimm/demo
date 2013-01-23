@@ -161,6 +161,7 @@
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\images\keepin_it_real.png" />
+    <Content Include="Content\prism.css" />
     <Content Include="Content\web-2.0.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -175,6 +176,7 @@
     <Content Include="Scripts\jquery.signalR-1.0.0-rc2.js" />
     <Content Include="Scripts\jquery.signalR-1.0.0-rc2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\prism.js" />
     <Content Include="Scripts\shake.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">

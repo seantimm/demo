@@ -18,3 +18,7 @@
 article .toobig {
     font-size: 4em;
 }
+
+.slide li {
+    font-size: 2em;
+}

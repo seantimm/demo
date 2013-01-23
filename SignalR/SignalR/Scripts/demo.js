@@ -1,4 +1,17 @@
-﻿(function ($) {
+﻿/*(function($) {
+    var inventoryHub = $.connection.inventory;
+
+    $.connection.hub.start()
+        .done(function() {
+            randomlyUpdateInventory({ id: 1, count: 5 });
+        });
+
+    function randomlyUpdateInventory(details) {
+        inventoryHub.server.updateInventory(details);
+    }
+})(jQuery);*/
+
+(function ($) {
     $('body').on('touchmove', function (e) {
         e.preventDefault(); // avoid iPad bouncing during slideshow
     });

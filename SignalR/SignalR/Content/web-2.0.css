@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 .deck-container {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 1.75em;
@@ -48,14 +48,14 @@
 .deck-container .slide h3 {
   color: #000;
 }
-.deck-container .slide pre {
+/*.deck-container .slide pre {
   border-color: #cde;
   background: #fff;
   position: relative;
-  z-index: auto;
+  z-index: auto;*/
   /* http://nicolasgallagher.com/css-drop-shadows-without-images/ */
-}
-.borderradius .deck-container .slide pre {
+/*}*/
+/*.borderradius .deck-container .slide pre {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -100,7 +100,7 @@
 }
 .deck-container .slide code {
   color: #789;
-}
+}*/
 .deck-container .slide blockquote {
   font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
   font-size: 2em;

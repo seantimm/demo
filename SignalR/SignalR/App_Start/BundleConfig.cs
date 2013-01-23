@@ -15,7 +15,8 @@ namespace SignalRDemo
 
             bundles.Add(new ScriptBundle("~/bundles/deck").Include(
                 "~/Scripts/deck.core.js",
-                "~/Scripts/deck.hash.js"));
+                "~/Scripts/deck.hash.js",
+                "~/Scripts/prism.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/signalr").Include(
                 "~/Scripts/jquery.signalR-1.0.0-rc2.js"));
@@ -33,6 +34,7 @@ namespace SignalRDemo
                 "~/Content/bootstrap.css", 
                 "~/Content/deck.core.css",
                 "~/Content/deck.hash.css",
+                "~/Content/prism.css",
                 "~/Content/web-2.0.css",
                 "~/Content/horizontal-slide.css",
                 "~/Content/site.css"));
