@@ -171,6 +171,8 @@
     <Content Include="Scripts\deck.core.js" />
     <Content Include="Scripts\deck.hash.js" />
     <Content Include="Scripts\demo.js" />
+    <None Include="Properties\PublishProfiles\mysignalrdemo - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\mysignalrdemo - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
