@@ -20,6 +20,7 @@ namespace SignalRDemo
                 "~/Scripts/jquery.signalR-1.0.0-rc2.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/demo").Include(
+                "~/Scripts/shake.js",
                 "~/Scripts/demo.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
@@ -30,6 +31,8 @@ namespace SignalRDemo
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/bootstrap.css", 
                 "~/Content/deck.core.css",
+                "~/Content/web-2.0.css",
+                "~/Content/horizontal-slide.css",
                 "~/Content/site.css"));
         }
     }

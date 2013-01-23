@@ -9,21 +9,38 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
-    <div class="slide">
-        <h2>Slide 1</h2>    
-    </div>
+    <body>
+        <article class="deck-container">
+            <section class="slide">
+                <h1>SignalR</h1>
+                <img src="~/Content/images/keepin_it_real.png"/>
+            </section>
 
-    <div class="slide">
-        <h2>Slide 2</h2>
-    </div>
+            <section class="slide">
+                <h2>Slide 2</h2>
+            </section>
+        </article>
+        
+        <a href="#drawbox" role="button" style="position: absolute; bottom: 0; z-index: 5000" class="btn" data-toggle="modal">Draw Time</a>
+        
+        <div id="drawbox" class="modal hide fade" style="left: 40px; right: 40px; top: 50px; bottom: 50px; width: auto; margin: 0" tabindex="-1" role="dialog">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+                <h3>It's like this...</h3>
+            </div>
+            <div class="modal-body" style="position: absolute; max-height: none; top: 49px; bottom: 60px; left: 0; right: 0; overflow: hidden">
+                <canvas id="canvas" width="4000" height="4000"></canvas>
+            </div>
+            <div class="modal-footer" style="position: absolute; bottom: 0; left: 0; right: 0">
+                <button class="btn" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/deck")
+        @Scripts.Render("~/bundles/signalr")
+        <script src="signalr/hubs" type="text/javascript"></script>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/deck")
-    @Scripts.Render("~/bundles/signalr")
-    <script src="signalr/hubs" type="text/javascript"></script>
-
-    @Scripts.Render("~/bundles/demo")
-</body>
+        @Scripts.Render("~/bundles/demo")
+    </body>
 </html>

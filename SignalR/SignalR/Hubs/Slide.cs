@@ -8,5 +8,15 @@ namespace SignalRDemo.Hubs
         {
             Clients.Others.goToSlide(slideIndex);
         }
+
+        public void AddClick(int x, int y, bool isDragging)
+        {
+            Clients.Others.addClick(x, y, isDragging);
+        }
+
+        public void ClearCanvas()
+        {
+            Clients.All.clearCanvas();
+        }
     }
 }
