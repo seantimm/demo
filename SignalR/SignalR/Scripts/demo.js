@@ -64,8 +64,8 @@
 
         var originalEvent = e.originalEvent;
         if (originalEvent.targetTouches) {
-            x = originalEvent.targetTouches[0].pageX;
-            y = originalEvent.targetTouches[0].pageY;
+            x = originalEvent.targetTouches[0].pageX - canvas.offset().left;
+            y = originalEvent.targetTouches[0].pageY - canvas.offset().top;
         }
 
         return { x: x, y: y };
@@ -94,17 +94,16 @@
         context.lineJoin = "round";
         context.lineWidth = 5;
 
+        context.beginPath();
         for (var i = 0; i < clickX.length; i++) {
-            context.beginPath();
             if (clickDrag[i] && i) {
                 context.moveTo(clickX[i - 1], clickY[i - 1]);
             } else {
                 context.moveTo(clickX[i] - 1, clickY[i]);
             }
             context.lineTo(clickX[i], clickY[i]);
-            context.closePath();
-            context.stroke();
         }
+        context.stroke();
     }
 
     hub.client.clearCanvas = function () {
