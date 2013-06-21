@@ -5,6 +5,7 @@
 // Key settings from Foundation settings file:
 $include-html-global-classes: false;
 $include-html-grid-classes: false;
+
 $total-columns: 24;
 //
 ///////////////////////////////////////////////
@@ -27,14 +28,6 @@ $total-columns: 24;
 ///////////////////////////////////////////////
 // Here is where our own CSS begins:
 $firstColumnWidth: $total-columns / 3;
-
-body > h1 {
-	@include grid-row;
-
-	> span {
-		@include grid-column($columns: 24, $center: true);
-	}
-}
 
 .l-nav-main {
 	> nav {
@@ -67,5 +60,14 @@ body > h1 {
 
 	> article {
 		background-color: orange;
+	}
+}
+
+body > h1 {
+	@include grid-row;
+
+	> span {
+		display: block;
+		@include grid-column($columns: 14, $center: true);
 	}
 }

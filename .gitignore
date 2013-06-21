@@ -10,3 +10,5 @@ packages/
 !packages/repositories.config
 node_modules/
 npm-debug.log
+
+foundation-demo/stylesheets/
