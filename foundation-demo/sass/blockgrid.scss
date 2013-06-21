@@ -1,0 +1,51 @@
+@import "compass";
+
+///////////////////////////////////////////////
+//
+// Key settings from Foundation settings file:
+$include-html-global-classes: false;
+$include-html-grid-classes: false;
+//
+///////////////////////////////////////////////
+
+@import "foundation/components/global";
+@import "foundation/components/block-grid";
+
+///////////////////////////////////////////////
+//
+// This is *required* if $include-html-global-classes is false:
+*,
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+//
+///////////////////////////////////////////////
+
+
+///////////////////////////////////////////////
+// Here is where our own CSS begins:
+
+.itemlist {
+	@include block-grid($per-row: 2, $spacing: 8px)
+}
+
+// Media Queries
+@media #{$small} {
+	.itemlist {
+		@include block-grid($per-row: 4, $spacing: 8px)
+	}
+}
+
+///////////////////////////////////////////////
+// CSS you can ignore (used to highlight the example:
+.itemlist {
+	> li > h2 {
+	 	background-color: orange;
+	 	height: 150px;
+	}
+
+	> li:nth-of-type(2n+1) > h2 {
+	 	background-color: salmon;
+	 }
+}

@@ -1,0 +1,65 @@
+@import "compass";
+
+///////////////////////////////////////////////
+//
+// Key settings from Foundation settings file:
+$include-html-global-classes: false;
+$include-html-grid-classes: false;
+
+$total-columns: 24;
+//
+///////////////////////////////////////////////
+
+@import "foundation/components/global";
+@import "foundation/components/grid";
+
+///////////////////////////////////////////////
+//
+// This is *required* if $include-html-global-classes is false:
+*,
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+//
+///////////////////////////////////////////////
+
+
+///////////////////////////////////////////////
+// Here is where our own CSS begins:
+
+.l-four-column {
+	@include grid-row;
+	> div:not(.offset) {
+		@include grid-column($columns: 6)
+	}
+
+	> div.offset {
+		@include grid-column($columns: 6, $offset: 12)
+	}
+}
+
+///////////////////////////////////////////////
+// CSS you can ignore (used to highlight the example:
+.l-four-column {
+	> div {
+		outline: 1px black solid;
+	}
+
+	> div:not(.offset) {
+		background-color: salmon;
+	}
+
+	> div.offset {
+		background-color: orange;
+	}
+}
+
+body > h1 {
+	@include grid-row;
+
+	> span {
+		display: block;
+		@include grid-column($columns: 14, $center: true);
+	}
+}

@@ -1,0 +1,499 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"util",
+				"utilityMethodDeferred"
+			],
+			[
+				"createEv",
+				"createEventDeferred"
+			],
+			[
+				"requ",
+				"requirePermissions"
+			],
+			[
+				"requi",
+				"requirePermissionsDeferred"
+			],
+			[
+				"create",
+				"createEventDeferred"
+			],
+			[
+				"appRe",
+				"appRequestDeferred"
+			],
+			[
+				"sendR",
+				"sendRequestDeferred"
+			],
+			[
+				"permis",
+				"permissionCsv"
+			],
+			[
+				"check",
+				"checkPermissionsDeferred"
+			],
+			[
+				"logi",
+				"loginDeferred"
+			],
+			[
+				"per",
+				"permissionCsv"
+			],
+			[
+				"perm",
+				"permissionCsv"
+			],
+			[
+				"onFa",
+				"onFacebookAuthResponseChange"
+			],
+			[
+				"button",
+				"buttonDiv"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/JSHint/JSHint.sublime-build",
+	"command_palette":
+	{
+		"height": 381.0,
+		"selected_items":
+		[
+			[
+				"Package Control: insta	",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"task",
+				"Tasks: New"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"J",
+				"JSHint"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Install p",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 545.0
+	},
+	"console":
+	{
+		"height": 167.0,
+		"history":
+		[
+			"git",
+			"exit",
+			"dir",
+			"../git/bin/git.exe",
+			"../git/bin",
+			"../git"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Sean/Projects/demo/.gitignore",
+		"/C/Users/Sean/Projects/demo/foundation-demo/sass/grid-hideNavOnSmall.scss",
+		"/C/Users/Sean/Projects/foundation/Cheffile",
+		"/C/Users/Sean/Projects/foundation/Vagrantfile",
+		"/C/Users/Sean/Downloads/css3-mediaqueries.js",
+		"/C/Users/stimm/Projects/foundation/scss/foundation/components/_section.scss",
+		"/C/Users/stimm/Projects/foundation/scss/foundation/components/_global.scss",
+		"/C/Users/stimm/Projects/accordion/index.html",
+		"/C/Users/stimm/Dropbox/toolbox/sublime/Data/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/stimm/Projects/accordion/javascripts/foundation/foundation.section.js",
+		"/C/Users/stimm/Projects/accordion/Gruntfile.js",
+		"/C/Users/stimm/Projects/accordion/sass/app.scss",
+		"/C/Users/stimm/Documents/IISExpress/config/applicationhost.config",
+		"/C/Users/stimm/Dropbox/toolbox/sublime/Data/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/stimm/Dropbox/toolbox/devkit/config.yml",
+		"/C/windows/system32/Drivers/etc/hosts",
+		"/C/Users/stimm/Dropbox/toolbox/powershell/Includes/SetEnvironment.ps1",
+		"/C/Users/Sean/Projects/learn/js/content/example.html",
+		"/C/Users/Sean/Projects/learn/phantomjs-1.9.1-windows/examples/run-qunit.js",
+		"/C/Users/Sean/Projects/learn/phantomjs-1.9.1-windows/examples/run-jasmine.js",
+		"/C/Users/Sean/Projects/learn/phantomjs-1.9.1-windows/examples/features.js",
+		"/C/Users/Sean/Projects/learn/phantomjs-1.9.1-windows/examples/phantomwebintro.js",
+		"/C/Users/Sean/Projects/learn/phantomjs-1.9.1-windows/examples/phantomwebintro.coffee",
+		"/C/Users/Sean/Projects/learn/phantomjs-1.9.1-windows/examples/countdown.js",
+		"/C/Users/Sean/Downloads/blanket.min.js",
+		"/C/Users/Sean/AppData/Local/Temp/Temp1_phantomjs-1.9.1-windows.zip/phantomjs-1.9.1-windows/README.md",
+		"/C/Users/Sean/Downloads/require.js",
+		"/C/Users/Sean/Downloads/domReady.js",
+		"/C/Users/Sean/Projects/generator-timmfoundation/README.md",
+		"/C/Users/Sean/Projects/generator-timmfoundation/.jshintrc",
+		"/C/Users/Sean/Projects/generator-timmfoundation/.gitignore",
+		"/C/Users/Sean/Dropbox/toolbox/sublime/Data/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/Sean/Dropbox/toolbox/sublime/Data/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/Sean/Projects/generator-timmfoundation/test/test-load.js",
+		"/C/Users/Sean/Projects/test/bower.json",
+		"/C/Users/Sean/Projects/generator-timmfoundation/app/templates/_bower.json",
+		"/C/Users/Sean/Dropbox/toolbox/sublime/Data/Packages/User/JSON.sublime-settings",
+		"/C/Users/Sean/Projects/generator-timmfoundation/generator-timmfoundation.sublime-project",
+		"/C/Users/Sean/Dropbox/toolbox/grunt-init/jquery/template.js",
+		"/C/Users/Sean/Projects/generator-timmFoundation/README.md",
+		"/C/Users/Sean/Projects/sussomo/foo2/Gruntfile.js",
+		"/C/Users/Sean/Projects/sussomo/ActionKeeper/Web/Gruntfile.js",
+		"/C/Users/Sean/Projects/sussomo/ActionKeeper/Web/index.html",
+		"/C/Users/Sean/Projects/sussomo/ActionKeeper/Web/stylesheets/app.css",
+		"/C/Users/Sean/Projects/sussomo/ActionKeeper/Web/sass/app.scss",
+		"/C/Users/Sean/Dropbox/toolbox/ruby/lib/ruby/gems/1.9.1/gems/therubyracer-0.10.2/ext/v8/gem_make.out",
+		"/C/Users/Sean/Dropbox/toolbox/setup.ps1",
+		"/C/Users/Sean/Projects/sussomo/ActionKeeper/Web/sass/_settings.scss",
+		"/C/Users/Sean/Projects/sussomo/ActionKeeper/Web/sass/vendor/normalize.scss",
+		"/C/Users/Sean/Projects/foundation/scss/normalize.scss",
+		"/C/Users/Sean/Projects/sussomo/ActionKeeper/Web/sass/normalize.scss",
+		"/C/Users/Sean/Projects/foundation/scss/foundation.scss",
+		"/C/Users/Sean/Dropbox/toolbox/ruby/lib/ruby/gems/2.0.0/gems/eventmachine-1.0.3/ext/project.h",
+		"/C/Users/Sean/Dropbox/toolbox/ruby/lib/ruby/gems/2.0.0/gems/eventmachine-1.0.3/Rakefile",
+		"/C/Users/stimm/Projects/scentsy/main/Presentation/PersonalWebSite/Scripts/Views/PartyCentral/Party/CreateFacebookEvent.js",
+		"/C/Users/stimm/Projects/scentsy/main/Presentation/PersonalWebSite/Scripts/facebook.js",
+		"/C/Users/stimm/Dropbox/toolbox/ruby/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.2.0/js/vendor/custom.modernizr.js",
+		"/C/Users/stimm/Projects/scentsy/main/Presentation/Workstation/Scripts/ajaxupload.js",
+		"/C/users/stimm/Dropbox/toolbox/setup.ps1",
+		"/C/Users/stimm/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Outlook/8AFPNOMY/Add CMS.sql",
+		"/C/Users/Sean/Dropbox/toolbox/devkit/config.yml",
+		"/C/Users/Sean/Dropbox/toolbox/devkit/dk.rb",
+		"/C/Users/Sean/Dropbox/toolbox/phantomjs-1.9.1-windows/README.md",
+		"/C/windows/system32/drivers/etc/hosts",
+		"/C/Users/stimm/Projects/scentsy/main/Build/main.proj",
+		"/C/Users/stimm/Projects/scentsy/main/Build/deploy/deploy.ps1",
+		"/C/Users/stimm/Projects/scentsy/main/Presentation/PersonalWebSite/Scripts/jquery.facebook.js",
+		"/C/Users/stimm/Dropbox/toolbox/sublime/Data/Packages/User/Package Control.sublime-settings",
+		"/C/Users/stimm/Dropbox/toolbox/powershell/Modules/Pscx/Pscx.psm1",
+		"/C/Users/stimm/Dropbox/toolbox/powershell/Modules/Pscx/Pscx.UserPreferences.ps1",
+		"/C/Users/stimm/Dropbox/toolbox/setup.ps1",
+		"/C/Users/stimm/Dropbox/toolbox/powershell/Main.ps1",
+		"/C/Users/stimm/Dropbox/toolbox/powershell/Modules/Pscx/ReleaseNotes.txt",
+		"/C/Users/stimm/Dropbox/toolbox/sublime/Data/Packages/SublimeLinter/README.md",
+		"/C/Users/stimm/Dropbox/toolbox/sublime/Data/Packages/SublimeLinter/Default (Windows).sublime-keymap",
+		"/C/Users/stimm/Dropbox/toolbox/powershell/Modules/Pscx/FormatData/Pscx.Environment.Format.ps1xml",
+		"/C/Users/stimm/Dropbox/toolbox/powershell/Modules/Pscx/Pscx.psd1",
+		"/C/Users/stimm/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1",
+		"/C/Users/stimm/Documents/WindowsPowerShell/Microsoft.PowerShellISE_profile.ps1",
+		"/C/Users/stimm/Dropbox/toolbox/powershell/foo.ps1",
+		"/C/Users/stimm/Projects/scentsy/main/Presentation/Workstation/Scripts/d3.min.js",
+		"/C/Users/stimm/Dropbox/toolbox/sublime/Data/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/stimm/Dropbox/toolbox/sublime/Data/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/stimm/Dropbox/toolbox/sublime/Data/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/stimm/Dropbox/toolbox/sublime/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/stimm/Dropbox/toolbox/sublime/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/stimm/Projects/scentsy/main/Presentation/Workstation/Web.QA.config",
+		"/C/Users/stimm/Projects/scentsy/main/Presentation/Workstation/Web.LIVE.Config",
+		"/C/Users/stimm/Projects/scentsy/main/Presentation/Workstation/Web.STAGING.config",
+		"/C/Users/stimm/Desktop/MergeInfo",
+		"/C/Users/stimm/Projects/scentsy/main/WebService/Ecommerce/WebService.Ecommerce/Web.config",
+		"/C/Users/stimm/Projects/scentsy/main/WebService/Ecommerce/WebService.Ecommerce/WebService.Ecommerce.csproj",
+		"/C/Users/stimm/Projects/scentsy/features/PartyCentral/Presentation/Common/Presentation.Common/ScentsyViewEngine.cs",
+		"/C/Users/stimm/Projects/scentsy/features/PartyCentral/Presentation/PersonalWebSite/Global.asax.cs",
+		"/C/Users/stimm/Projects/scentsy/features/PartyCentral/Presentation/PersonalWebSite/Web.config",
+		"/C/Users/stimm/Projects/scentsy/main/WebService/Ecommerce/WebService.Ecommerce/Web.Release.config",
+		"/C/Users/stimm/Projects/scentsy/main/Common/Unity/Common.Unity.csproj",
+		"/C/Users/stimm/AppData/Local/Temp/Temp1_ThreadSafeUnityContainer.zip/UnitySingleton.cs",
+		"/C/Users/stimm/AppData/Local/Temp/Temp1_ThreadSafeUnityContainer.zip/UnitySingletonInternal.cs",
+		"/C/Users/stimm/Projects/scentsy/main/WebService/Ecommerce/WebService.Ecommerce/Web.Debug.config",
+		"/C/Users/Sean/Projects/learn/js/content/basket.html",
+		"/C/Users/Sean/Dropbox/toolbox/sublime/Data/Packages/JSHint/README.md",
+		"/C/Users/Sean/Projects/demo/DoThings/r.js",
+		"/C/Users/Sean/Dropbox/toolbox/sublime/Data/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Sean/Dropbox/toolbox/sublime/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Windows/System32/Drivers/etc/hosts",
+		"/C/Users/Sean/Projects/partycentral/Presentation/PersonalWebSite/Scripts/Views/PartyCentral/Party/InviteByEmail.js",
+		"/C/Users/Sean/Projects/partycentral/Presentation/PersonalWebSite/Scripts/Views/PartyCentral/Party/ko.handlers.js",
+		"/C/Users/Sean/Projects/partycentral/Presentation/PersonalWebSite/Scripts/Views/PartyCentral/Party/DesignParty.js",
+		"/C/Users/Sean/Projects/partycentral/Presentation/PersonalWebSite/Scripts/Views/PartyCentral/Party/Party.js",
+		"/C/Users/Sean/Dropbox/toolbox/sublime/Data/Packages/User/Package Control.sublime-settings",
+		"/C/Users/stimm/Documents/@Projects/Presentation Meeting Topics",
+		"/C/Users/stimm/Projects/scentsy/branches/2013-04-18/Presentation/PersonalWebSite/Controllers/file.txt",
+		"/C/Users/stimm/AppData/Local/Temp/Temp1_Facebook-Connect-buttons-PSD-and-PNG.zip/Facebook Connect buttons PSD and PNG/Go on read me.txt",
+		"/C/Users/stimm/Projects/scentsy/mvc3/Presentation/Workstation/Controllers/ContactsController.cs",
+		"/C/Users/stimm/Projects/scentsy/features/PartyCentralClean/.svn/tmp/Deployment",
+		"/C/Users/stimm/Projects/scentsy/features/PartyCentralClean/.svn/tmp/Scripts.dbproj.tmp",
+		"/C/Users/stimm/Projects/scentsy/mvc3/Presentation/Workstation/Controllers/PerformanceController.cs",
+		"/C/Users/stimm/Projects/scentsy/features/PartyCentral/.svn/tmp/PartyService.cs.tmp",
+		"/C/Users/stimm/Projects/scentsy/features/PartyCentral/.svn/tmp/IPartyService.cs.tmp",
+		"/C/Users/stimm/Projects/scentsy/features/PartyCentral/.svn/tmp/PerformanceController.cs.tmp",
+		"/C/Users/stimm/Projects/scentsy/branches/2013-04-18/Build/deploy/deploy.ps1",
+		"/C/Users/stimm/Projects/scentsy/branches/2013-04-18/Build/main.proj",
+		"/C/Users/stimm/Projects/scentsy/mvc3/WebService/Mobile/Web.config",
+		"/C/Users/stimm/Projects/scentsy/mvc3/WebService/Mobile/Web.STAGING.config",
+		"/C/Users/stimm/Projects/scentsy/mvc3/Presentation/PersonalWebSite/Content/_sass/Common/Common.scss",
+		"/C/Users/stimm/Projects/scentsy/mvc3/Presentation/PersonalWebSite/Content/_sass/Common/partials/_PartyCentral.scss",
+		"/C/Users/stimm/Projects/scentsy/mvc3/Presentation/PersonalWebSite/Content/_sass/_foundation/_foundation-global.scss"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"is_accordion",
+			"active",
+			"one_up",
+			"active",
+			"jshint",
+			"one",
+			"ToolBoxPath",
+			"Get-SCriptDirectory",
+			"(Get-SCriptDirectory)",
+			"error",
+			"import \"foundation",
+			"runAfterInit",
+			"trim",
+			"deferred",
+			"hasPermissions",
+			"loginDeferred",
+			"zip",
+			"$ZipCommand",
+			"7z",
+			"Apps",
+			"node",
+			">>>",
+			"aspnet",
+			"graceadeleqa",
+			"graceadelestaging",
+			"graceadele",
+			"velatalocal",
+			"velataqa",
+			"velatastaging",
+			"velata",
+			"scentsy",
+			"scentsystaging",
+			"scentsyqa",
+			"scentsylocal",
+			"Workst",
+			"workstation.",
+			">>>",
+			"EnvironmentService.SessionProvider.CurrentSite",
+			"CultureContext",
+			"LoadVisibleIncentives",
+			"EnvironmentService.SessionProvider.CurrentSite",
+			"EnvironmentService.SessionProvider.Curr",
+			"CurrentSite",
+			"CaseManageme",
+			"where",
+			"isElement",
+			"isArray",
+			"xGetElement",
+			"importJS",
+			"CommunicationService",
+			"CommunicationSer",
+			"trace",
+			"ruby",
+			"fontsFold",
+			"Path",
+			"Get-SpecialFolder",
+			"{",
+			"<"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$ToolBoxPath",
+			"import \"vendor/foundation",
+			"graceadelelocal",
+			"graceadeleqa",
+			"graceadelestaging",
+			"graceadele",
+			"velatalocal",
+			"velataqa",
+			"velatastaging",
+			"velata",
+			"scentsy",
+			"scentsystaging",
+			"scentsyqa"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 218.0
+	},
+	"project": "foundation-demo.sublime-project",
+	"replace":
+	{
+		"height": 90.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 258.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

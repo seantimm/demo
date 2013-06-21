@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>SCSS Grid Demo</title>
+  <link rel="stylesheet" href="stylesheets/section-nested.css" />
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
+</head>
+<body>
+
+	<h1><span>Section - Nested</span></h1>
+	<div class="mainTabs" data-section="tabs">
+    <section>
+      <div class="tabTitle" data-section-title><a href="#tab1">Tab 1</a></div>
+      <div class="tabContent" data-slug="tab1" data-section-content>
+        <h2>Section 1 content</h2>
+
+        <div class="subTabs" data-section="tabs">
+          <section>
+            <div class="tabTitle" data-section-title><a href="#subtab1">SubTab 1</a></div>
+            <div class="tabContent" data-slug="subtab1" data-section-content>
+              <h3>SubTab 1 content</h3>
+            </div>
+          </section>
+          <section>
+            <div class="tabTitle" data-section-title><a href="#subtab2">SubTab 2</a></div>
+            <div class="tabContent" data-slug="subtab2" data-section-content>
+              <h3>SubTab 2 content</h3>
+
+              <div class="subAccordion" data-section="accordion">
+                <section>
+                  <div class="accordionTitle" data-section-title><a href="#subsubacc1">SubAccordion 1</a></div>
+                  <div class="accordionContent" data-slug="subsubacc1" data-section-content>
+                    <h3>SubAccordion 1 content</h3>
+                  </div>
+                </section>
+                <section>
+                  <div class="accordionTitle" data-section-title><a href="#subsubbacc2">SubAccordion 2</a></div>
+                  <div class="accordionContent" data-slug="subsubacc2" data-section-content>
+                    <h3>SubAccordion 2 content</h3>
+                  </div>
+                </section>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <div class="tabTitle" data-section-title><a href="#tab2">Tab 2</a></div>
+      <div class="tabContent" data-slug="tab2" data-section-content>
+        <h2>Section 2 content</h2>
+
+        <div class="subAccordion" data-section="accordion">
+          <section>
+            <div class="accordionTitle" data-section-title><a href="#subacc1">SubAccordion 1</a></div>
+            <div class="accordionContent" data-slug="subacc1" data-section-content>
+              <h3>SubAccordion 1 content</h3>
+            </div>
+          </section>
+          <section>
+            <div class="accordionTitle" data-section-title><a href="#subacc2">SubAccordion 2</a></div>
+            <div class="accordionContent" data-slug="subacc2" data-section-content>
+              <h3>SubAccordion 2 content</h3>
+
+              <div class="subTabs" data-section="tabs">
+                <section>
+                  <div class="tabTitle" data-section-title><a href="#subsubtab1">SubTab 1</a></div>
+                  <div class="tabContent" data-slug="subsubtab1" data-section-content>
+                    <h3>SubTab 1 content</h3>
+                  </div>
+                </section>
+                <section>
+                  <div class="tabTitle" data-section-title><a href="#subsubtab2">SubTab 2</a></div>
+                  <div class="tabContent" data-slug="subsubtab2" data-section-content>
+                    <h3>SubTab 2 content</h3>
+                  </div>
+                </section>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </section>
+	</div>
+
+  <script src='javascripts/vendor/jquery.js'></script>
+  <script src="javascripts/foundation/foundation.js"></script>
+  <script src="javascripts/foundation/foundation.section.js"></script>
+  
+  <script>
+    $(document).foundation();
+    $('.mainTabs').foundation('section', { deep_linking: true });
+  </script>
+</body>
+</html>

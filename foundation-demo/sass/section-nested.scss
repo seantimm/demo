@@ -1,0 +1,82 @@
+@import "compass";
+
+///////////////////////////////////////////////
+//
+// Key settings from Foundation settings file:
+$include-html-global-classes: false;
+$include-html-section-classes: false;
+//
+///////////////////////////////////////////////
+
+@import "foundation/components/global";
+@import "foundation/components/section";
+
+///////////////////////////////////////////////
+//
+// This is *required* if $include-html-global-classes is false:
+*,
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+//
+///////////////////////////////////////////////
+
+
+///////////////////////////////////////////////
+// Here is where our own CSS begins:
+.mainTabs {
+	@include section-container($section-type: tabs);
+
+	& > section {
+		@include section(
+			$section-type: tabs,
+			$title-selector: ".tabTitle", 
+			$content-selector: ".tabContent", 
+			$title-padding: 10px 50px,
+			$title-bg-hover:darken(pink,5%),
+			$title-bg-active: orange);
+	}
+}
+
+.subTabs {
+	@include section-container($section-type: tabs);
+
+	& > section {
+		@include section($section-type: tabs, $title-selector: ".tabTitle", $content-selector: ".tabContent", $title-padding: 10px 50px);
+	}
+}
+
+.subAccordion {
+	@include section-container($section-type: accordion);
+
+	& > section {
+		@include section($section-type: accordion, $title-selector: ".accordionTitle", $content-selector: ".accordionContent", $title-padding: 10px 50px);
+	}
+}
+
+// Media Queries
+@media #{$small} {
+}
+
+///////////////////////////////////////////////
+// CSS you can ignore (used to highlight the example:
+.mainTabs {
+	> section > .tabContent {
+		background-color: orange;
+	}
+
+	> section + section > .tabContent {
+		background-color: salmon;
+	}
+}
+// .itemlist {
+// 	> li > h2 {
+// 	 	background-color: orange;
+// 	 	height: 150px;
+// 	}
+
+// 	> li:nth-of-type(2n+1) > h2 {
+// 	 	background-color: salmon;
+// 	 }
+// }

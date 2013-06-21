@@ -1,0 +1,76 @@
+@import "compass";
+
+///////////////////////////////////////////////
+//
+// Key settings from Foundation settings file:
+$include-html-global-classes: false;
+$include-html-grid-classes: false;
+
+$total-columns: 24;
+//
+///////////////////////////////////////////////
+
+@import "foundation/components/global";
+@import "foundation/components/grid";
+
+///////////////////////////////////////////////
+//
+// This is *required* if $include-html-global-classes is false:
+*,
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+//
+///////////////////////////////////////////////
+
+
+///////////////////////////////////////////////
+// Here is where our own CSS begins:
+
+.l-two-source {
+	@include grid-row;
+	> .first {
+		@include grid-column($columns: 16, $push: 8)
+	}
+
+	> .second {
+		@include grid-column($columns: 8, $pull: 16)
+	}
+}
+
+// Media Queries
+@media #{$small} {
+	.l-two-source {
+		@include grid-row();
+
+		> .first {
+			@include grid-column($columns: 16, $push: 0);
+		}
+
+		> .second {
+			@include grid-column($columns: 8, $pull: 0);
+		}
+	}
+}
+
+///////////////////////////////////////////////
+// CSS you can ignore (used to highlight the example:
+.l-two-source {
+	> .first {
+		background-color: salmon;
+	}
+
+	> .second {
+		background-color: orange;
+	}
+}
+
+body > h1 {
+	@include grid-row;
+
+	> span {
+		display: block;
+		@include grid-column($columns: 14, $center: true);
+	}
+}
