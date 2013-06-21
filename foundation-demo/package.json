@@ -1,0 +1,17 @@
+{
+  "name": "foundation-demo",
+  "version": "0.0.0",
+  "description": "Foundation Demos",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.2.0",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.4"
+  }
+}

@@ -1,0 +1,91 @@
+/* line 20, ../sass/grid-hideNavOnSmall.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 31, ../sass/grid-hideNavOnSmall.scss */
+body > h1 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+  *zoom: 1;
+}
+/* line 121, ../../../Dropbox/toolbox/ruby/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.2.2/scss/foundation/components/_global.scss */
+body > h1:before, body > h1:after {
+  content: " ";
+  display: table;
+}
+/* line 122, ../../../Dropbox/toolbox/ruby/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.2.2/scss/foundation/components/_global.scss */
+body > h1:after {
+  clear: both;
+}
+/* line 34, ../sass/grid-hideNavOnSmall.scss */
+body > h1 > span {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 20.83333%;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+  float: left;
+}
+
+/* line 40, ../sass/grid-hideNavOnSmall.scss */
+.l-nav-main > nav {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 47, ../sass/grid-hideNavOnSmall.scss */
+  .l-nav-main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5em;
+    *zoom: 1;
+  }
+  /* line 121, ../../../Dropbox/toolbox/ruby/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.2.2/scss/foundation/components/_global.scss */
+  .l-nav-main:before, .l-nav-main:after {
+    content: " ";
+    display: table;
+  }
+  /* line 122, ../../../Dropbox/toolbox/ruby/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.2.2/scss/foundation/components/_global.scss */
+  .l-nav-main:after {
+    clear: both;
+  }
+  /* line 50, ../sass/grid-hideNavOnSmall.scss */
+  .l-nav-main > nav {
+    display: block;
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 33.33333%;
+    float: left;
+  }
+  /* line 55, ../sass/grid-hideNavOnSmall.scss */
+  .l-nav-main > article {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 66.66667%;
+    float: left;
+  }
+}
+/* line 64, ../sass/grid-hideNavOnSmall.scss */
+.l-nav-main > nav {
+  background-color: salmon;
+}
+/* line 68, ../sass/grid-hideNavOnSmall.scss */
+.l-nav-main > article {
+  background-color: orange;
+}

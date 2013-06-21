@@ -1,0 +1,71 @@
+@import "compass";
+
+///////////////////////////////////////////////
+//
+// Key settings from Foundation settings file:
+$include-html-global-classes: false;
+$include-html-grid-classes: false;
+$total-columns: 24;
+//
+///////////////////////////////////////////////
+
+@import "foundation/components/global";
+@import "foundation/components/grid";
+
+///////////////////////////////////////////////
+//
+// This is *required* if $include-html-global-classes is false:
+*,
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+//
+///////////////////////////////////////////////
+
+
+///////////////////////////////////////////////
+// Here is where our own CSS begins:
+$firstColumnWidth: $total-columns / 3;
+
+body > h1 {
+	@include grid-row;
+
+	> span {
+		@include grid-column($columns: 5, $center: true);
+	}
+}
+
+.l-nav-main {
+	> nav {
+		display: none;
+	}
+}
+
+// Media Queries
+@media #{$small} {
+	.l-nav-main {
+		@include grid-row();
+
+		> nav {
+			display: block;
+			@include grid-column($columns: $firstColumnWidth);
+		}
+
+		> article {
+			@include grid-column($columns: $total-columns - $firstColumnWidth);
+		}
+	}
+}
+
+///////////////////////////////////////////////
+// CSS you can ignore (used to highlight the example:
+.l-nav-main {
+	> nav {
+		background-color: salmon;
+	}
+
+	> article {
+		background-color: orange;
+	}
+}
